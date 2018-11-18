@@ -6,7 +6,7 @@
 *   ***Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected***
 
 
-We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps. We’ve done this assignment by implementing “Elasticsearch” as the systems logging, and both grafana and Kabani to display the systems current health and state.
+We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps. We’ve done this assignment by implementing “Elasticsearch” as the systems logging, and both grafana and Kibana to display the systems current health and state.
 
 While we seemed to have build a solid and secure system, actually getting the thing to crash was a tougher challenge than initial expected. Since we hadn't encounter any particular system crashing errors during development, we had to come up with a way to manually crash the system. 
 
@@ -22,6 +22,8 @@ This would result in the frontend not being able to login, post data or comments
 *Screenshot of the grafana-dashboard*
 
 As can be seen on the grafana dashboard screenshot above, the 4 pods responsible for hosting and containing the backend went offline 3 times: 18:13-18:14, and subsequently 2 times (briefly) at 18:47 and 19:08
+
+![Kibana screenshot](https://github.com/BingoBois/Logging-and-PostMortem/blob/master/Dolphin-Kibana.png)
 
 We raised the following issues:
 
