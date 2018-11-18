@@ -16,7 +16,7 @@ This would result in the frontend not being able to login, post data or comments
 
 
 
-![alt_text](images/Logging-and0.png "image_tooltip")
+![grafana screenshot](https://github.com/BingoBois/Logging-and-PostMortem/blob/master/Dolphin-Grafana.png)
 
 
 *Screenshot of the grafana-dashboard*
