@@ -3,9 +3,9 @@
 
 
 
-*   **_Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected _**
+*   **Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected **
 
- \
+
 We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps.
 
 While we seemed to have build a solid and secure system, actually getting the thing to crash was a tougher challenge than initial expected. Since we hadn't encounter any particular system crashing errors during development, we had to come up with a way to manually crash the system. 
@@ -14,15 +14,12 @@ Our solution to force a crash in the system, was to try and shutdown the MySQL d
 
 This would result in the frontend not being able to login, post data or comments, or for Helge's simulator to post any comments or post, or check-in on /latest.
 
- 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Logging-and0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Logging-and0.png "image_tooltip")
 
 
-Screenshot of the grafana-dashboard
+*Screenshot of the grafana-dashboard*
 
 As can be seen on the grafana dashboard screenshot above, the 4 pods responsible for hosting and containing the backend went offline 3 times: 18:13-18:14, and subsequently 2 times (briefly) at 18:47 and 19:08
 
@@ -30,7 +27,7 @@ We raised the following issues:
 
 [URGENT: We need to crash your party!](https://github.com/edipetres/HackerNews-GroupF/issues/55)
 
-[Access Prometheus & Grafana](https://github.com/edipetres/HackerNews-GroupF/issues/52) \
+[Access Prometheus & Grafana](https://github.com/edipetres/HackerNews-GroupF/issues/52) 
 
 
 The team themself had posted the following issues:
