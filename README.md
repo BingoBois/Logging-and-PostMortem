@@ -3,7 +3,7 @@
 
 
 
-*   **Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected **
+*   *Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected *
 
 
 We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps. We’ve done this assignment by implementing “Elasticsearch” as the systems logging, and both grafana and Kabani to display the systems current health and state.
