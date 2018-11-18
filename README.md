@@ -6,7 +6,7 @@
 *   **Summary; briefly describing what happened, at what time (beginning/ending) the system was affected, time-zone, who (which users) was affected **
 
 
-We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps.
+We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps. We’ve done this assignment by implementing “Elasticsearch” as the systems logging, and both grafana and Kabani to display the systems current health and state.
 
 While we seemed to have build a solid and secure system, actually getting the thing to crash was a tougher challenge than initial expected. Since we hadn't encounter any particular system crashing errors during development, we had to come up with a way to manually crash the system. 
 
