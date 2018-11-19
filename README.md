@@ -147,3 +147,5 @@ The team had done following commits, in relation to logging:
 [continued work on updating console to logger](https://github.com/edipetres/HackerNews-GroupF/commit/4be4d63eccc19fd42e9ae56b8cc85425183acc00)
 
 [Updated all existing console messages to logger](https://github.com/edipetres/HackerNews-GroupF/commit/07e3f5c94d159e6dc489d7d9584d1f10f1cb9514)
+
+We had a small conversation with the group that is (supposed) to be monitoring us regarding our crash, in which we exchanged experience with the assignment, and we walked them through how we had crashed the system, our grafana and Kibana and how we ultimately fixed the issue. 
