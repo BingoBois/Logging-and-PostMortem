@@ -5,7 +5,7 @@
 
 ## Summary and description of the assignment.
 
- \
+
 We've built our system using Kubernetes to facilitate hosting and building of our backend and frontend, as well as our DevOps. We've done this assignment by implementing "Elasticsearch" as the systems logging, and both grafana and Kibana to display the systems current health and state.
 
 While we seemed to have build a solid and secure system, actually getting the thing to crash was a tougher challenge than initial expected. Since we hadn't encounter any particular system crashing errors during development, we had to come up with a way to manually crash the system. 
@@ -13,10 +13,6 @@ While we seemed to have build a solid and secure system, actually getting the th
 Our solution to force a crash in the system, was to try and shutdown the MySQL database and see how the backend would react.
 
 This would result in the frontend not being able to login, post data or comments, or for Helge's simulator to post any comments or post, or check-in on /latest.
-
- 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Logging-and0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![grafana screenshot](https://github.com/BingoBois/Logging-and-PostMortem/blob/master/Dolphin-Grafana.png)
@@ -112,7 +108,6 @@ The team also made a custom solution for alerting without grafana. Instead of go
 
 ## The lesson
 
- \
 After inserting the missing "return"-statements to the mysql-function, the system correctly logged errors to kibana and no longer totally crashed the backend if a request came in and the MySQL-server was offline.
 
 The important lesson of this assignment is to be even more thorough and be sure to check and test the systems error-handling, especially if you plan to add functionality on top of your normal error-handling, such as error-logging.
