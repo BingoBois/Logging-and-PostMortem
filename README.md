@@ -61,25 +61,25 @@ This baffled the team, since the team have had a big focus on handling and catch
 As an example, the code for error-handling mysql-queries looked like this:
 
 ```
-(error, results, fields) => { \
-        if (error != null) { \
-          reject(error); \
-        } \
+(error, results, fields) => { 
+        if (error != null) { 
+          reject(error); 
+        } 
           resolve(results);
-     }
+}
 ```
 This really made the team scratch their heads, since when looking at the code, the team fully expected the error handling to automatically stop running anything else if an error occurred, since the code used "reject".
 
 However, the team then (to our shock and horror) discovered, that the error-handling actually did not work or function as intended. The team refactored the above code into:
 
 ```
-(error, results, fields) => { \
-        if (error != null) { \
-          reject(error); \
-        } else { \
+(error, results, fields) => { 
+        if (error != null) { 
+          reject(error); 
+        } else { 
           resolve(results);
+  }
 }
-     }
 ```
 
 This solved the issue! Now, when the backend would receive a request and the MySQL-server was shut down, the backend would log the error to kibana, continue to work and most importantly not crash!
@@ -89,10 +89,10 @@ The team then realised, that while they expected the "reject"-function to automa
 This meant that the code was once again refactored, now with the missing "return"-statement.
 
 ```
-(error, results, fields) => { \
-        if (error != null) { \
-         return reject(error); \
-        } \
+(error, results, fields) => { 
+        if (error != null) { 
+         return reject(error); 
+        } 
           resolve(results);
      }
 ```
